@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 public class KeycloakProfile {
     private String sub;
-    private String email_verified;
+    private Boolean email_verified;
     private String physicalDeliveryOfficeName;
     private String mobile;
     private String description;
