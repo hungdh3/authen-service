@@ -11,3 +11,7 @@ services:
       - "./realm-data:/opt/keycloak/data/import"
     command:
       - start-dev --import-realm
+  user_profile:
+    image: hungdhvn/authn-service:0.0.1
+    ports:
+      - "8000:8000"
