@@ -1,5 +1,5 @@
 #docker build -t intranet-service .
-FROM registry.access.redhat.com/ubi8/openjdk-8-runtime
+FROM registry.access.redhat.com/ubi8/openjdk-11-runtime
 
 COPY ./build/resources/main/entrypoint.sh /home/jboss/entrypoint.sh
 COPY ./build/libs/*.jar /home/jboss/service.jar

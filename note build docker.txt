@@ -1,8 +1,8 @@
 ====== Build app
 docker build -t authn-service .
 
-docker tag  3b1786f31fdd hungdhvn/authn-service:0.0.1
-docker push hungdhvn/authn-service:0.0.1
+docker tag  8ec0202d39d6 hungdhvn/authn-service:0.0.3
+docker push hungdhvn/authn-service:0.0.3
 
 openssl s_client -showcerts -connect harbor.ho.vcbdev.com:443 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > harbor-prod.crt
 sudo cp ca.crt /usr/local/share/ca-certificates/

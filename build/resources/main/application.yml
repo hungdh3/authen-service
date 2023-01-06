@@ -15,4 +15,5 @@ logging:
           filter:
             CommonsRequestLoggingFilter: DEBUG
 keycloak:
-  auth-service: "http://localhost:8080/realms/vietcombank_ad_onboarding/protocol/openid-connect/"
+#  auth-service: "http://localhost:8080/realms/vietcombank_ad_onboarding/protocol/openid-connect/"
+  auth-service: ${AUTH_SERVICE_URL}
